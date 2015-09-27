@@ -1,0 +1,27 @@
+{
+  "name": "felicity16beta",
+  "version": "0.1.0",
+  "description": "A temporary version of Felicity '16 website.",
+  "dependencies": {
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.0.2",
+    "gulp-notify": "^2.2.0",
+    "gulp-sass": "^2.0.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "gulp" : "gulp",
+    "build" : "gulp build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/felicity-iiith/felicity16Beta.git"
+  },
+  "author": "Harshit Harchani",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/felicity-iiith/felicity16Beta/issues"
+  },
+  "homepage": "https://github.com/felicity-iiith/felicity16Beta#readme"
+}
