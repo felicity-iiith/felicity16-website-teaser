@@ -1,6 +1,9 @@
 # felicity16 βeta
 A temporary version of Felicity '16 website.
 
+## To Contribute
+Fork the repo, make changes and send us a pull request. :)
+
 ### For making changes in styles
 You can edit the css file directly or optionally (and recommended) the source
 scss file. (Don't use both ways. gulp will overide the css file and you'll lose your changes in it)
