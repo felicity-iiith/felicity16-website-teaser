@@ -64,7 +64,7 @@ a {
 body {
   border-top: 1.5em solid #FFC107;
   background-color: #FFC107;
-  color: white;
+  color: #222;
   font-family: "Open Sans";
   overflow-y: scroll;
   display: -webkit-box;
@@ -133,7 +133,6 @@ header {
     font-size: 3em;
     letter-spacing: 5px; }
   header p.coming-soon {
-    color: #555;
     font-size: 2em;
     font-weight: bold;
     text-align: center; }
@@ -208,12 +207,11 @@ nav {
 
 main {
   background-color: #FFC107;
-  color: white;
+  color: #222;
   padding-bottom: 1em;
   position: relative;
   z-index: 1; }
   main section {
-    color: #222;
     font-size: 1.5em;
     display: none; }
   @media (max-width: 768px) {
@@ -230,7 +228,7 @@ main {
 
 footer {
   background-color: #FFB300;
-  color: white;
+  color: #222;
   border-top: 1px solid white;
   box-shadow: 0 0 6px 0 white;
   padding: 0.5em 1em; }

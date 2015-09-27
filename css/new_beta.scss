@@ -2,10 +2,11 @@ $upper-bar-color: #FFC107;
 $header-bgcolor: white;
 $header-color: #222;
 $main-bgcolor: #FFC107;
-$main-color: white;
+$main-color: #222;
 $link-bgcolor: #00838F;
-$active-link-bgcolor: #30B3BF;
 $link-color: white;
+$active-link-bgcolor: #30B3BF;
+$footer-color: #FFB300;
 
 * {
     box-sizing: border-box;
@@ -147,7 +148,6 @@ header {
     }
 
     p.coming-soon {
-        color: #555;
         font-size: 2em;
         font-weight: bold;
         text-align: center;
@@ -226,7 +226,6 @@ main {
     z-index: 1;
 
     section {
-        color: #222;
         font-size: 1.5em;
         display: none;
     }
@@ -255,7 +254,7 @@ main {
 }
 
 footer {
-    background-color: #FFB300;
+    background-color: $footer-color;
     color: $main-color;
     border-top: 1px solid white;
     box-shadow: 0 0 6px 0 white;
