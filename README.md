@@ -1,4 +1,7 @@
 # felicity16 βeta
+
+> **DEPRECATED!**: This repository is no longer in use. The beta version of felicity '16 has been moved to the old (private) Felicity '15 repository.
+
 A temporary version of Felicity '16 website.
 
 ## To Contribute
