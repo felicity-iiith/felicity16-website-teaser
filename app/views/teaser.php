@@ -53,7 +53,7 @@
           <li class="share-item">
             <a
             class="share-button"
-            href="https://felicity.iiit.ac.in/"
+            href="https://felicity.iiit.ac.in/15/"
             title="Old website" target="_blank"><i class="share-icon fa fa-external-link"></i></a>
           </li>
         </ul>
