@@ -1,9 +1,9 @@
 <?php
   $base = base_url();
   $bg_colors = [
-    'home'    => '#43A2AF',
+    'home'    => '#358EBC',
     'about'   => '#D8473A',
-    'contact' => '#59B902'
+    'contact' => 'rgb(20,110,30)'
   ];
   $page_title = ($page !== 'home') ? ucfirst($page) . ' | ' : '';
 ?><!DOCTYPE html>
@@ -20,11 +20,44 @@
     filter: url("<?php echo base_url(); ?>img/goo-filter.svg#goo");
   }
   </style>
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"/>
-  <link href="//fonts.googleapis.com/css?family=Poiret+One|Flamenco|Noto+Sans|Crete+Round" rel="stylesheet" type="text/css">
+  <link href="<?php echo base_url(); ?>css/font-awesome/css/font-awesome.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css?family=Flamenco|Noto+Sans" rel="stylesheet" type="text/css">
 </head>
 <body class="<?php echo $page?>" style="background-color: <?php echo $bg_colors[$page];?>">
   <div class="wrapper">
+    <div class="main-menu">
+      <div class="share">
+        <button class="share-toggle-button">
+          <i class="share-icon fa fa-bars"></i>
+        </button>
+        <ul class="share-items">
+          <li class="share-item">
+            <a
+            class="share-button internal-link"
+            href="<?php echo $base; ?>"
+            title="Home"><i class="share-icon fa fa-home"></i></a>
+          </li>
+          <li class="share-item">
+            <a
+            class="share-button internal-link"
+            href="<?php echo $base; ?>about/"
+            title="About"><i class="share-icon fa fa-info"></i></a>
+          </li>
+          <li class="share-item">
+            <a
+            href="<?php echo $base; ?>contact/"
+            class="share-button internal-link"
+            title="Contact Us"><i class="share-icon fa fa-envelope"></i></a>
+          </li>
+          <li class="share-item">
+            <a
+            class="share-button"
+            href="https://felicity.iiit.ac.in/"
+            title="Old website" target="_blank"><i class="share-icon fa fa-external-link"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
     <aside>
       <div class="lamp">
         <div class="bulb"></div>
@@ -35,9 +68,7 @@
         <img src="<?php echo base_url(); ?>img/lamp.png">
       </div>
     </aside>
-    <header
-    class="page"
-    id="home"
+    <header class="page" id="home"
     style="<?php if ($page == 'home') echo 'display:block;';?>">
       <div class="content">
         <p class="iiit-h">
@@ -88,83 +119,53 @@
           or
           <a target="_blank" href="https://twitter.com/felicity_iiith">
             <img class="social-icon" src="<?php echo base_url(); ?>img/twitter-icon.png">
-            twitter
+            twitter.
           </a>
+          Do check out our facebook page for last year's glimpses.
         </p>
-        <p>Or bug our coordinators:</p><br>
-        <div class="grid row">
+        <p>Or bug our coordinators:</p>
+        <div class="grid row nowrap">
           <div class="col">
-            <div>
+            <p>
               Jeevan Chowdary
               <a target="_blank" href="https://www.facebook.com/g1.8.jeevan">
                   <img class="social-icon" src="<?php echo base_url(); ?>img/fb-icon.png">
               </a>
-            </div>
-            <div>
+            </p>
+            <p>
               <a target="_blank" href="mailto:jeevan@felicity.iiit.ac.in">jeevan@felicity.iiit.ac.in</a>
-            </div>
-            <div>(+91) 9849255966</div>
+            </p>
+            <p>(+91) 9849255966</p>
           </div>
           <div class="col">
-            <div>
+            <p>
               Sanatan Mishra
               <a target="_blank" href="https://www.facebook.com/sanatan.mishra.7">
                 <img class="social-icon" src="<?php echo base_url(); ?>img/fb-icon.png">
               </a>
-            </div>
-            <div>
+            </p>
+            <p>
               <a target="_blank" href="mailto:sanatan@felicity.iiit.ac.in">sanatan@felicity.iiit.ac.in</a>
-            </div>
-            <div>(+91) 8712876675</div>
+            </p>
+            <p>(+91) 8712876675</p>
           </div>
           <div class="col">
-            <div>
+            <p>
               Vivek Ghaisas
               <a target="_blank" href="https://www.facebook.com/vghaisas">
                 <img class="social-icon" src="<?php echo base_url(); ?>img/fb-icon.png">
               </a>
-            </div>
-            <div>
+            </p>
+            <p>
               <a target="_blank" href="mailto:vivek@felicity.iiit.ac.in">vivek@felicity.iiit.ac.in</a>
-            </div>
-            <div>(+91) 9581248425</div>
+            </p>
+            <p>(+91) 9581248425</p>
           </div>
         </div>
       </section>
     </main>
-    <div class="share main-menu">
-      <button class="share-toggle-button">
-        <i class="share-icon fa fa-bars"></i>
-      </button>
-      <ul class="share-items">
-        <li class="share-item">
-          <a
-          class="share-button internal-link"
-          href="<?php echo $base; ?>"
-          title="Home"><i class="share-icon fa fa-home"></i></a>
-        </li>
-        <li class="share-item">
-          <a
-          class="share-button internal-link"
-          href="<?php echo $base; ?>about/"
-          title="About"><i class="share-icon fa fa-info"></i></a>
-        </li>
-        <li class="share-item">
-          <a
-          href="<?php echo $base; ?>contact/"
-          class="share-button internal-link"
-          title="Contact Us"><i class="share-icon fa fa-envelope"></i></a>
-        </li>
-        <li class="share-item">
-          <a
-          class="share-button"
-          href="https://felicity.iiit.ac.in/"
-          title="Old website" target="_blank"><i class="share-icon fa fa-history"></i></a>
-        </li>
-      </ul>
-    </div>
   </div>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script src="<?php echo base_url(); ?>js/TweenMax.min.js"></script>
 	<script src="<?php echo base_url(); ?>js/beta-menu.js"></script>
   <script>
@@ -172,6 +173,7 @@
       var base = '<?php echo $base; ?>'
         ,currentPage = '<?php echo $page; ?>'
         ,bgColors = <?php echo json_encode($bg_colors);?>
+        ,loadingContent = false
         ,$body = $(document.body);
 
         var capitalize = function(s) {
@@ -187,9 +189,19 @@
       };
 
       var loadContent = function (page) {
-        $body.css('background-color', bgColors[page]);
+        if (loadingContent) {
+          return;
+        }
+        loadingContent = true;
+        $body
+          .removeClass(currentPage)
+          .addClass(page)
+          .css('background-color', bgColors[page]);
+
         $('#' + currentPage).fadeOut(400, function(){
-          $('#' + page).fadeIn(600);
+          $('#' + page).fadeIn(600, function(){
+            loadingContent = false;
+          });
         });
         currentPage = page;
         document.title = (page !== 'home') ? capitalize(page) + ' | Felicity · IIIT-H' : 'Felicity · IIIT-H';
