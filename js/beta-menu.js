@@ -7,8 +7,8 @@ $(document).ready(function(){
 		,buttonsMid=(buttonsNum/2)
 		,spacing=75
 	;
-
 	function openShareMenu(){
+		$toggleButton.find('.share-icon').toggleClass('fa-close fa-bars');
 		TweenMax.to($toggleButton,0.1,{
 			scaleX:1.2,
 			scaleY:0.6,
@@ -58,6 +58,7 @@ $(document).ready(function(){
 		})
 	}
 	function closeShareMenu(){
+		$toggleButton.find('.share-icon').toggleClass('fa-close fa-bars');
 		TweenMax.to([$toggleButton,$toggleButton.children(".share-icon")],1.4,{
 			delay:0.1,
 			scale:1,
@@ -85,7 +86,6 @@ $(document).ready(function(){
 			});
 		})
 	}
-
 	function toggleShareMenu(){
 		menuOpen=!menuOpen
 
@@ -94,5 +94,4 @@ $(document).ready(function(){
 	$toggleButton.on("click",function(){
 		toggleShareMenu();
 	})
-
 })
