@@ -1,7 +1,7 @@
 <?php
 
 $cfg = array(
-    'default_controller'    => 'page',
+    'default_controller'    => 'teaser',
     'default_method'        => 'index',
 
     'base_url'              => '',

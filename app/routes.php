@@ -5,4 +5,5 @@
 * @var array
 */
 $routes = [
+    '/' => '/teaser/index/'
 ];
