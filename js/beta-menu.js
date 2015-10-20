@@ -95,3 +95,8 @@ $(document).ready(function(){
 		toggleShareMenu();
 	})
 })
+
+function lalala(c) {
+  c('create', 'UA-57607777-1', 'auto');
+  c('send', 'pageview');
+}
