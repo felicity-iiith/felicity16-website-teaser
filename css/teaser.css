@@ -1,3 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #358EBC;
+    transition: background-color 1s;
+    min-height: 100vh;
+    font-family: "Noto Sans", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.contact a {
+    color: darkgreen;
+}
+
+.contact a:hover {
+    color: blue;
+}
+
+body.contact {
+    font-size: 18px;
+}
+
 .text-center {
     text-align: center;
 }
@@ -49,16 +76,6 @@
     -ms-flex-direction: column;
     flex-direction: column;
 }
-}
-
-* {
-    box-sizing: border-box;
-}
-
-body {
-    background-color: #358EBC;
-    transition: background-color 1s;
-    min-height: 100vh;
 }
 
 aside {
@@ -259,6 +276,7 @@ h1.page-title {
 
 .main-menu a:hover,.main-menu button:hover {
     background-color: #111;
+    color: #fff;
 }
 
 .main-menu a {

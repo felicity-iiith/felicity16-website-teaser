@@ -1,9 +1,9 @@
 <?php
   $base = base_url();
   $bg_colors = [
-    'home'    => '#358EBC',
-    'about'   => '#F36A71',
-    'contact' => '#9D9E94'
+    'home'    => '#43A2AF',
+    'about'   => '#D8473A',
+    'contact' => '#59B902'
   ];
   $page_title = ($page !== 'home') ? ucfirst($page) . ' | ' : '';
 ?><!DOCTYPE html>
@@ -91,8 +91,7 @@
             twitter
           </a>
         </p>
-        <p>Or bug our coordinators as much as you want</p>
-        <h3>Coordinators</h3>
+        <p>Or bug our coordinators:</p><br>
         <div class="grid row">
           <div class="col">
             <div>
