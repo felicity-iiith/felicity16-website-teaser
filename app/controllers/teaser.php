@@ -2,7 +2,7 @@
 
 class teaser extends Controller {
 
-    private $allowedPages = ['home', 'about', 'contact'];
+    private $allowedPages = ['home', 'about', 'contact', 'credits'];
 
     function index($page = 'home', $extra = null) {
         if ( ! in_array($page, $this->allowedPages) OR $extra !== null) {

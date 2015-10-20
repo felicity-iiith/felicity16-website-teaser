@@ -3,7 +3,8 @@
   $bg_colors = [
     'home'    => '#358EBC',
     'about'   => '#D8473A',
-    'contact' => 'rgb(20,110,30)'
+    'contact' => '#146E1E',
+    'credits' => '#D49E24'
   ];
   $page_title = ($page !== 'home') ? ucfirst($page) . ' | ' : '';
 ?><!DOCTYPE html>
@@ -84,9 +85,7 @@
       </div>
     </header>
     <main>
-      <section
-      class="page page-narrow"
-      id="about"
+      <section id="about" class="page page-narrow"
       style="<?php if ($page == 'about') echo 'display:block;';?>">
         <h1>About <span class="text-lower">Felicity</span></h1>
         <p>
@@ -98,9 +97,7 @@
           day long bonanza that has something for everyone!
         </p>
       </section>
-      <section
-      class="page page-narrow"
-      id="contact"
+      <section id="contact" class="page page-narrow"
       style="<?php if ($page == 'contact') echo 'display:block;';?>">
         <h1>
           <span class="title-icon"><i class="share-icon fa fa-envelope"></i></span>
@@ -163,10 +160,33 @@
           </div>
         </div>
       </section>
+      <section id="credits" class="page page-narrow"
+      style="<?php if ($page == 'credits') echo 'display:block;';?>">
+        <h1>Credits</h1>
+        <p>
+          The above menu is taken from
+          <a target="_blank" href="http://tympanus.net/codrops/2015/03/10/creative-gooey-effects/">Codrops</a>.
+        </p>
+        <p>
+          We are also indebted to
+          <a target="_blank" href="http://fortawesome.github.io/Font-Awesome/">Font Awesome</a>,
+          <a target="_blank" href="https://www.google.com/fonts/">Google Fonts</a>
+          and
+          <a target="_blank" href="https://necolas.github.io/normalize.css/">Normalize.css</a>.
+        </p>
+        <p>
+          The code for this website is available on <i class="fa fa-github"></i> Github at
+          <a target="_blank" href="https://github.com/felicity-iiith/felicity16-website-teaser">
+            felicity-iiith/felicity16-website-teaser
+          </a>
+          under the terms of the MIT License.
+        </p>
+      </section>
     </main>
   </div>
   <footer>
-    Copyright &copy; 2015-2016 Team Felicity, <a href="https://www.iiit.ac.in/">IIIT Hyderabad</a>
+    Copyright <i class="fa fa-copyright"></i> 2015-2016 Team Felicity, <a target="_blank" href="https://www.iiit.ac.in/">IIIT Hyderabad</a>
+    <a class="internal-link" href="<?php echo $base; ?>credits/">Credits</a>
   </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script src="<?php echo base_url(); ?>js/TweenMax.min.js"></script>

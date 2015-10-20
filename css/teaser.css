@@ -10,7 +10,7 @@ body {
   transition: background-color 1s;
   min-height: 100vh;
   font-family:"Noto Sans", sans-serif;
-  background-color: #000;
+  background-color: #ccc;
   font-size: 16px;
 }
 
@@ -320,19 +320,24 @@ section p {
   font-size: 1.5em;
   line-height: 1.333em;
   text-align: left;
-  margin: 0 auto;
-}
-
-#contact p {
   margin: 0.5em auto;
 }
 
-#contact a {
+section a {
+  color: #ccc;
+  transition: color .3s ease .15s;
+}
+
+section#contact a {
   color: lightgreen;
 }
 
-#contact a:hover {
-  color:white;
+section#credits a {
+  color: purple;
+}
+
+section a:hover {
+  color:white !important;
 }
 
 #contact .grid .col {
