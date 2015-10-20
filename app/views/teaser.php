@@ -165,6 +165,9 @@
       </section>
     </main>
   </div>
+  <footer>
+    Copyright &copy; 2015-2016 Team Felicity, <a href="https://www.iiit.ac.in/">IIIT Hyderabad</a>
+  </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script src="<?php echo base_url(); ?>js/TweenMax.min.js"></script>
 	<script src="<?php echo base_url(); ?>js/beta-menu.js"></script>

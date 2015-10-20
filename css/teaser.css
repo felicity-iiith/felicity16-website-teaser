@@ -360,3 +360,26 @@ section p {
   max-height: 20px;
   vertical-align: baseline;
 }
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width:100%;
+  background-color:#111;
+  color: white;
+  font-size: 12px;
+  padding: .5em 2em;
+}
+
+footer a {
+  color: #ddd;
+  border-bottom: 1px solid #fff;
+}
+
+footer a:hover {
+  color: #fff;
+}
+
+footer > *:last-child {
+  float: right;
+}
