@@ -6,11 +6,17 @@
     'credits' => '#D49E24'
   ];
   $page_title = ($page !== 'home') ? ucfirst($page) . ' | ' : '';
+  $og_title = ucfirst($page);
 ?><!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <meta name="keywords" content="felicity, felicty16, college, fest, threads, pulsation, iiit, iiith, international, institute, information, technology, hyderabad"/>
+  <meta name="description" content="<?php echo $meta_description[$page];?>">
+  <meta name="og:title" content="<?php echo $og_title;?>">
+  <meta name="og:description" content="<?php echo $meta_description[$page];?>">
+  <meta name="og:image" content="<?php echo base_url();?>img/website.png">
   <title><?php echo $page_title; ?>Felicity · IIIT-H</title>
   <link rel="stylesheet" href="<?php echo base_url(); ?>css/normalize.css">
   <link rel="stylesheet" href="<?php echo base_url(); ?>css/teaser.css">
