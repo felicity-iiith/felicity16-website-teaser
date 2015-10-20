@@ -1,5 +1,4 @@
 <?php
-  $base = base_url();
   $bg_colors = [
     'home'    => '#358EBC',
     'about'   => '#D8473A',
@@ -35,18 +34,18 @@
           <li class="share-item">
             <a
             class="share-button internal-link"
-            href="<?php echo $base; ?>"
+            href="<?php echo base_url(); ?>"
             title="Home"><i class="share-icon fa fa-home"></i></a>
           </li>
           <li class="share-item">
             <a
             class="share-button internal-link"
-            href="<?php echo $base; ?>about/"
+            href="<?php echo base_url(); ?>about/"
             title="About"><i class="share-icon fa fa-info"></i></a>
           </li>
           <li class="share-item">
             <a
-            href="<?php echo $base; ?>contact/"
+            href="<?php echo base_url(); ?>contact/"
             class="share-button internal-link"
             title="Contact Us"><i class="share-icon fa fa-envelope"></i></a>
           </li>
@@ -186,14 +185,14 @@
   </div>
   <footer>
     Copyright <i class="fa fa-copyright"></i> 2015-2016 Team Felicity, <a target="_blank" href="https://www.iiit.ac.in/">IIIT Hyderabad</a>
-    <a class="internal-link" href="<?php echo $base; ?>credits/">Credits</a>
+    <a class="internal-link" href="<?php echo base_url(); ?>credits/">Credits</a>
   </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script src="<?php echo base_url(); ?>js/TweenMax.min.js"></script>
 	<script src="<?php echo base_url(); ?>js/beta-menu.js"></script>
   <script>
     $(function(href){
-      var base = '<?php echo $base; ?>'
+      var base = '<?php echo base_url(); ?>'
         ,currentPage = '<?php echo $page; ?>'
         ,bgColors = <?php echo json_encode($bg_colors);?>
         ,loadingContent = false
