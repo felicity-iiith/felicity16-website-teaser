@@ -13,6 +13,12 @@ class teaser extends Controller {
     function index($page = 'home', $extra = null) {
         if ( ! in_array($page, $this->allowedPages) OR $extra !== null) {
             $this->load_library('http_lib', 'http');
+
+            $oldSiteLink = 'https://felicity.iiit.ac.in/15/' . implode('/', func_get_args()) . '/';
+            $headers = get_headers( $oldSiteLink );
+            if (isset($headers[0]) && $headers[0] == 'HTTP/1.1 200 OK') {
+                $this->http->redirect( $oldSiteLink );
+            }
             $this->http->err_404();
         }
         $this->load_view('teaser', [
