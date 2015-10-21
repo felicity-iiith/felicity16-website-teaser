@@ -16,7 +16,9 @@ class teaser extends Controller {
 
             $oldSiteLink = 'https://felicity.iiit.ac.in/15/' . implode('/', func_get_args()) . '/';
             $headers = get_headers( $oldSiteLink );
-            if (isset($headers[0]) && $headers[0] == 'HTTP/1.1 200 OK') {
+            if (isset($headers[0]) && 
+                is_string($headers[0]) && 
+                ( (strpos($headers[0],'200') !== false) || (strpos($headers[0],'301') !== false) || (strpos($headers[0],'200') !== false) ) ) {
                 $this->http->redirect( $oldSiteLink );
             }
             $this->http->err_404();
