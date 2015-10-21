@@ -1,0 +1,7 @@
+# TECH TEAM
+
+    Abhineet Jain           -- Threads Coordinator           -- @abhiineit, @AbhineetJain, @AbhiJ
+    Harshit Harchani        -- Website                       -- @hharchani
+    Nisarg Jhaveri          -- Website, Server Administrator -- @nisargjhaveri
+    Parth Laxmikant Kolekar -- Server Administrator          -- @SprinkleberryMuffin, @ParthKolekar
+    Vivek Ghaisas           -- Felicity Coordinator          -- @polybuildr, @vghaisas
