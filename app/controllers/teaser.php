@@ -18,7 +18,7 @@ class teaser extends Controller {
             $headers = get_headers( $oldSiteLink );
             if (isset($headers[0]) && 
                 is_string($headers[0]) && 
-                ( (strpos($headers[0],'200') !== false) || (strpos($headers[0],'301') !== false) || (strpos($headers[0],'200') !== false) ) ) {
+                ( (strpos($headers[0],'200') !== false) || (strpos($headers[0],'301') !== false) || (strpos($headers[0],'302') !== false) ) ) {
                 $this->http->redirect( $oldSiteLink );
             }
             $this->http->err_404();
