@@ -366,6 +366,10 @@ section a:hover {
   vertical-align: baseline;
 }
 
+main {
+  padding-bottom: 50px;
+}
+
 footer {
   position: fixed;
   bottom: 0;
