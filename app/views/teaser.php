@@ -1,8 +1,8 @@
 <?php
   $bg_colors = [
-    'home'    => 'linear-gradient(direction, color-stop1, color-stop2)',
-    'about'   => '#D8473A',
-    'contact' => '#146E1E',
+    'home'    => 'linear-gradient(#0D0B33, #57548C)',
+    'about'   => 'linear-gradient(#0D0B33, #57548C)',
+    'contact' => 'linear-gradient(#0D0B33, #57548C)',
    # 'credits' => '#D49E24'
   ];
   $page_title = ($page !== 'home') ? ucfirst($page) . ' | ' : '';
@@ -29,7 +29,7 @@
   <link href="<?php echo base_url(); ?>css/font-awesome/css/font-awesome.min.css" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css?family=Flamenco|Noto+Sans" rel="stylesheet" type="text/css">
 </head>
-<body class="<?php echo $page?>" style="background-color: <?php echo $bg_colors[$page];?>">
+<body class="<?php echo $page?>" style="background: <?php echo $bg_colors[$page];?>">
   <div class="wrapper">
     <div class="main-menu">
       <div class="share">
@@ -130,7 +130,7 @@
           <a target="_blank" href="https://twitter.com/felicity_iiith">
             <img class="social-icon" src="<?php echo base_url(); ?>img/twitter-icon.png">
             twitter.
-          </a>
+          </a></p><p>
           Do check out our facebook page for last year's glimpses.
         </p>
         <p>Or bug our coordinators:</p>
