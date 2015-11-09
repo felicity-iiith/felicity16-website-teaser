@@ -10,7 +10,11 @@ body {
   transition: background-color 1s;
   min-height: 100vh;
   font-family:"Noto Sans", sans-serif;
-  background-color: #ccc;
+  
+  background: -webkit-linear-gradient(#0D0B33, #57548C); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#0D0B33, #57548C); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#0D0B33, #57548C); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#0D0B33, #57548C); /* Standard syntax */
   font-size: 16px;
 }
 
@@ -168,6 +172,16 @@ aside {
   -webkit-transform-origin: top right;
   -ms-transform-origin: top right;
   transform-origin: top right;
+}
+.broom{
+
+ position: absolute;
+    z-index: 2;
+    left: 8%;
+    bottom:10%;
+
+   
+ /* float:right;*/
 }
 
 @media (max-width:540px) {
