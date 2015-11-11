@@ -5,5 +5,6 @@
 * @var array
 */
 $routes = [
-    '/' => '/teaser/index/'
+    '/contest/diwali/' => '/contest/diwali/',
+    '/' => '/teaser/index/',
 ];
