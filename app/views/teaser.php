@@ -1,9 +1,9 @@
 <?php
   $bg_colors = [
-    'home'    => '#358EBC',
-    'about'   => '#D8473A',
-    'contact' => '#146E1E',
-    'credits' => '#D49E24'
+    'home'    => 'linear-gradient(#0D0B33, #57548C)',
+    'about'   => 'linear-gradient(#0D0B33, #57548C)',
+    'contact' => 'linear-gradient(#0D0B33, #57548C)',
+   # 'credits' => '#D49E24'
   ];
   $page_title = ($page !== 'home') ? ucfirst($page) . ' | ' : '';
   $og_title = ucfirst($page);
@@ -29,7 +29,7 @@
   <link href="<?php echo base_url(); ?>css/font-awesome/css/font-awesome.min.css" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css?family=Flamenco|Noto+Sans" rel="stylesheet" type="text/css">
 </head>
-<body class="<?php echo $page?>" style="background-color: <?php echo $bg_colors[$page];?>">
+<body class="<?php echo $page?>" style="background: <?php echo $bg_colors[$page];?>">
   <div class="wrapper">
     <div class="main-menu">
       <div class="share">
@@ -65,6 +65,7 @@
       </div>
     </div>
     <aside>
+
       <div class="lamp">
         <div class="bulb"></div>
         <img src="<?php echo base_url(); ?>img/lamp.png">
@@ -73,9 +74,11 @@
         <div class="bulb"></div>
         <img src="<?php echo base_url(); ?>img/lamp.png">
       </div>
+
     </aside>
     <header class="page" id="home"
     style="<?php if ($page == 'home') echo 'display:block;';?>">
+
       <div class="content">
         <p class="iiit-h">
           <img src="<?php echo base_url(); ?>img/iiit-logo.png" alt="IIIT H Logo"> IIIT-H
@@ -88,8 +91,13 @@
         <p class="tagline">Where magic happens</p>
         <p class="coming-soon">Coming soon<span class="ellipsis">...</span></p>
       </div>
+      <div class="broom">
+        <img src="<?php echo base_url(); ?>img/broom3.png" style="opacity: 0.8;height:350px;width:300px">
+      </div>
     </header>
+
     <main>
+
       <section id="about" class="page page-narrow"
       style="<?php if ($page == 'about') echo 'display:block;';?>">
         <h1>About <span class="text-lower">Felicity</span></h1>
@@ -122,7 +130,7 @@
           <a target="_blank" href="https://twitter.com/felicity_iiith">
             <img class="social-icon" src="<?php echo base_url(); ?>img/twitter-icon.png">
             twitter.
-          </a>
+          </a></p><p>
           Do check out our facebook page for last year's glimpses.
         </p>
         <p>Or bug our coordinators:</p>
@@ -189,6 +197,7 @@
       </section>
     </main>
   </div>
+
   <footer>
     Copyright <i class="fa fa-copyright"></i> 2015-2016 Team Felicity, <a target="_blank" href="https://www.iiit.ac.in/">IIIT Hyderabad</a>
     <a class="internal-link" href="<?php echo base_url(); ?>credits/">Credits</a>

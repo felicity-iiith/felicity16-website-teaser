@@ -10,7 +10,7 @@ body {
   transition: background-color 1s;
   min-height: 100vh;
   font-family:"Noto Sans", sans-serif;
-  background-color: #ccc;
+
   font-size: 16px;
 }
 
@@ -168,6 +168,16 @@ aside {
   -webkit-transform-origin: top right;
   -ms-transform-origin: top right;
   transform-origin: top right;
+}
+.broom{
+
+ position: absolute;
+    z-index: 2;
+    left: 8%;
+    bottom:10%;
+
+   
+ /* float:right;*/
 }
 
 @media (max-width:540px) {
