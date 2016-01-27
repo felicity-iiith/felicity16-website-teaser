@@ -121,9 +121,9 @@
           or
           <a target="_blank" href="https://twitter.com/felicity_iiith">
             <img class="social-icon" src="<?php echo base_url(); ?>img/twitter-icon.png">
-            twitter.
+            twitter
           </a>
-          Do check out our facebook page for last year's glimpses.
+          . Do check out our facebook page for last year's glimpses.
         </p>
         <p>Or bug our coordinators:</p>
         <div class="grid row nowrap">

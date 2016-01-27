@@ -12,6 +12,7 @@ body {
   font-family:"Noto Sans", sans-serif;
   background-color: #ccc;
   font-size: 16px;
+  color: #000;
 }
 
 .text-center {
@@ -85,6 +86,10 @@ body {
   height: 100px;
   margin: 0 auto;
   position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .share-button, .share-toggle-button {
@@ -364,6 +369,10 @@ section a:hover {
 .social-icon {
   max-height: 20px;
   vertical-align: baseline;
+}
+
+main {
+  padding-bottom: 50px;
 }
 
 footer {
